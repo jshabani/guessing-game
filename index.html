@@ -12,33 +12,32 @@
         <script type="text/javascript">
         var userBox = prompt("What's my name?","");
         var userName = function(name) {
-          if (name === "Pierre") {
+          if (userBox === "Pierre") {
               confirm("You win! Perfect!");
           } else {
               confirm("Awww! Try again!");
           }
         }
-        userName("Pierre");
+        userName(userBox);
 
         var  countryBox = prompt("Where am I from?","");
         var userCountry = function(place) {
-          if (place === "DRCongo") {
+          if (countryBox === "DRCongo") {
               confirm("Where it all started! Let there be me!");
           } else {
               confirm("Awww! Try again!");
           }
         }
-        userCountry("DRCongo");
+        userCountry(countryBox);
 
         var colorBox = prompt("What's my favority color?","");
-        var userColor = function(shade) {
-          if (shade === "Yellow") {
-              confirm("Bright & Lively!");
+          if (colorBox === "Yellow") {
+              alert("Bright & Lively!");
           } else {
-              confirm("Awww! Try again!");
+              alert("Awww! Try again!");
           }
-        }
-        userColor("Yellow");
+
+        //userColor("Yellow");
         /*
           console.log("Asking user for his/her name...");
         var greeting ="Welcome " + userName + "!";
