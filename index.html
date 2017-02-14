@@ -10,35 +10,51 @@
         <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/10400929_696665923823_428920_n.jpg?oh=3052adb8ebc35bbb3901e1fbe7d92dcd&oe=5909EEF2" />
         </center></a>
         <script type="text/javascript">
+        var count = 0;
+        var score = 0;
         var userBox = prompt("What's my name?","");
         var userName = function(name) {
           if (name === "Pierre") {
               confirm("You win! Perfect!");
+              score++;
           } else {
               confirm("Awww! Try again!");
+              count++;
           }
         }
-        userName("Pierre");
+        userName(userBox);
 
         var  countryBox = prompt("Where am I from?","");
         var userCountry = function(place) {
           if (place === "DRCongo") {
               confirm("Where it all started! Let there be me!");
+              score++;
           } else {
               confirm("Awww! Try again!");
+              count++;
           }
         }
-        userCountry("DRCongo");
+        userCountry(countryBox);
 
         var colorBox = prompt("What's my favority color?","");
         var userColor = function(shade) {
           if (shade === "Yellow") {
               confirm("Bright & Lively!");
+              score++
           } else {
               confirm("Awww! Try again!");
+              count++;
           }
         }
-        userColor("Yellow");
+        userColor(colorBox);
+alert("Congratulations, you have answered " + score + " questions right!");
+alert("You got " + count + " questions wrong!");
+
+
+//for (var userColor = 0; userColor < 4; userColor ++) {
+//    if (userColor )
+//}
+
         /*
           console.log("Asking user for his/her name...");
         var greeting ="Welcome " + userName + "!";
