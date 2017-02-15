@@ -10,12 +10,16 @@
         <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/10400929_696665923823_428920_n.jpg?oh=3052adb8ebc35bbb3901e1fbe7d92dcd&oe=5909EEF2" />
         </center></a>
         <script type="text/javascript">
+        var count = 0;
+        var score = 0;
         var userBox = prompt("What's my name?","");
         var userName = function(name) {
           if (userBox === "Pierre") {
               confirm("You win! Perfect!");
+              count++
           } else {
               confirm("Awww! Try again!");
+              score++
           }
         }
         userName(userBox);
@@ -24,8 +28,10 @@
         var userCountry = function(place) {
           if (countryBox === "DRCongo") {
               confirm("Where it all started! Let there be me!");
+              count++
           } else {
               confirm("Awww! Try again!");
+              score++
           }
         }
         userCountry(countryBox);
@@ -33,10 +39,13 @@
         var colorBox = prompt("What's my favority color?","");
           if (colorBox === "Yellow") {
               alert("Bright & Lively!");
+              count++
           } else {
               alert("Awww! Try again!");
+              score++
           }
-
+          alert("Congratulations!! You got " + count + " questions correct!!");
+          alert("Oh snap!! You missed " + score + " answers!");
         //userColor("Yellow");
         /*
           console.log("Asking user for his/her name...");
