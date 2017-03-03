@@ -2,61 +2,90 @@
 <html>
   <head>
     <title>Biography for Code 201</title>
+    <script type="text/javascript" src="game.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
   </head>
-    <body style="background-color: #D3D3D3">
-      <h1><center>Welcome To Pierre's First Page!</center></h1>
+      <h2>Welcome To Pierre's First Page!</h2>
       <h3> Git &amp; GitHub Example</h1>
       <a href="http://www.codefellowspdx.com" target="_blank"><center>
         <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/10400929_696665923823_428920_n.jpg?oh=3052adb8ebc35bbb3901e1fbe7d92dcd&oe=5909EEF2" />
         </center></a>
-        <script type="text/javascript">
-        var count = 0;
-        var score = 0;
-        var userBox = prompt("What's my name?","");
-        var userName = function(name) {
-          if (userBox === "Pierre") {
-              confirm("You win! Perfect!");
-              count++
-          } else {
-              confirm("Awww! Try again!");
-              score++
-          }
-        }
-        userName(userBox);
 
-        var  countryBox = prompt("Where am I from?","");
-        var userCountry = function(place) {
-          if (countryBox === "DRCongo") {
-              confirm("Where it all started! Let there be me!");
-              count++
-          } else {
-              confirm("Awww! Try again!");
-              score++
-          }
-        }
-        userCountry(countryBox);
+        //buttons that are linked to the javascript
+        <button onclick="userName()">Name</button>
+        <button onclick="userCountry()">Country</button>
+        <button onclick="userColor()">Fav color</button>
+        <button onclick="guessnumber()">The Game</button>
 
-        var colorBox = prompt("What's my favority color?","");
-          if (colorBox === "Yellow") {
-              alert("Bright & Lively!");
-              count++
-          } else {
-              alert("Awww! Try again!");
-              score++
-          }
-          alert("Congratulations!! You got " + count + " questions correct!!");
-          alert("Oh snap!! You missed " + score + " answers!");
-        //userColor("Yellow");
-        /*
-          console.log("Asking user for his/her name...");
-        var greeting ="Welcome " + userName + "!";
-          console.log("Getting today's date....");
-        var today = new Date();
-        greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
-          alert(greeting);
-      /******This is a multiple line comment
-              Check it out like so
-      *********/
-    </script>
+    <p id="answer-location"><strong>Say my name?</strong></p>
+    <p id="answer-location2"><strong>The mother land!</strong></p>
+    <p id="answer-location3"><strong>Think outside the box, my friend!</strong></p>
+    <p id="answer-location4"><strong>Play at your own risk!</strong></p>
+    
+    <h3>My Education</h3>
+    <table>
+      <thead>
+          <th colspan="3">Learning To Conform!</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name of School</td>
+          <td>Type of School</td>
+          <td>Location</td>
+        </tr>
+        <tr>
+          <td>GSR</td>
+          <td>Elementary School</td>
+          <td>Abidjan</td>
+        </tr>
+        <tr>
+          <td>Lycee Blaise Pascal</td>
+          <td>Middle School</td>
+          <td>Abidjan</td>
+        </tr>
+        <tr>
+          <td>St. Stanislaus College Prep</td>
+          <td>Highschool</td>
+          <td>Bay St. Louis</td>
+        </tr>
+        <tr>
+          <td>Temple University</td>
+          <td>Univeristy</td>
+          <td>Philadelphia</td>
+        </tr>
+        <tr>
+          <td>Mt. Hood Community College</td>
+          <td>College</td>
+          <td>Portland</td>
+        </tr>
+        <tr>
+          <td>Codedfellows</td>
+          <td>Coding Bootcamp</td>
+          <td>Portland</td>
+        </tr>
+      </tbody>
+    </table>
+      <ul>
+        <li>God</li>
+        <li>Family</li>
+        <li>Work</li>
+        <li>Pleasure</li>
+        <li>Time</li>
+        <li>Knowledge</li>
+        <li>Wisdom</li>
+      </ul>
+    <h3>Cities I lived in!</h3>
+      <ol>
+        <li>Kinshasa</li>
+        <li>Abidjan</li>
+        <li>New Orleans</li>
+        <li>Philadelphia</li>
+        <li>Atlanta</li>
+        <li>Portland</li>
+      </ol>
+
+    <h3>What I like to do for fun!</h3>
+
+
     </body>
 </html>
